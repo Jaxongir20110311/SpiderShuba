@@ -1,12 +1,21 @@
-import React from 'react'
-import Hero from './Hero'
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
+import Planet from "./components/Planet";
+import Cards from "./components/Cards";
+import Earn from "./components/Earn";
+import Invest from "./components/Invest";
 
-const App = () => {
+function App() {
   return (
-    <div>
-      <Hero/>
-    </div>
-  )
+    <>
+      <Navbar />
+      <Hero />
+      <Planet />
+      <Cards />
+      <Earn />
+      <Invest />
+    </>
+  );
 }
 
-export default App
+export default App;
