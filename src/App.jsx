@@ -1,12 +1,22 @@
-import React from 'react'
-import Hero from './Hero'
 
-const App = () => {
+import Roadmap from "./components/Roadmap";
+import Team from "./components/Team";
+import Partners from "./components/Partners";
+import FAQ from "./components/Faq";
+import Community from "./components/Community";
+import Footer from "./components/Footer";
+
+function App() {
   return (
-    <div>
-      <Hero/>
-    </div>
-  )
+    <>
+      <Roadmap />
+      <Team />
+      <Partners />
+      <FAQ />
+      <Community />
+      <Footer />
+    </>
+  );
 }
 
-export default App
+export default App;
