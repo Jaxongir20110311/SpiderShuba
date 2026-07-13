@@ -1,0 +1,153 @@
+.footer{
+    width:100%;
+    background:#0d1029;
+    padding:80px 8% 30px;
+    border-top:1px solid rgba(255,255,255,.08);
+}
+
+.footer-container{
+    display:flex;
+    justify-content:space-between;
+    gap:80px;
+    flex-wrap:wrap;
+    margin-bottom:50px;
+}
+
+/* ================= Logo ================= */
+
+.footer-logo{
+    flex:1;
+    min-width:280px;
+}
+
+.footer-logo img{
+    width:70px;
+    margin-bottom:15px;
+    transition:.4s;
+}
+
+.footer-logo img:hover{
+    transform:rotate(10deg) scale(1.1);
+}
+
+.footer-logo h2{
+    color:#fff;
+    margin-bottom:20px;
+    font-size:30px;
+}
+
+.footer-logo p{
+    color:#b9bdd7;
+    line-height:1.8;
+    max-width:380px;
+}
+
+/* ================= Links ================= */
+
+.footer-links{
+    flex:2;
+    display:flex;
+    justify-content:space-between;
+    gap:40px;
+    flex-wrap:wrap;
+}
+
+.footer-column{
+    min-width:180px;
+}
+
+.footer-column h3{
+    color:#fff;
+    margin-bottom:20px;
+    font-size:22px;
+}
+
+.footer-column a{
+    display:block;
+    color:#b9bdd7;
+    text-decoration:none;
+    margin-bottom:14px;
+    transition:.35s;
+}
+
+.footer-column a:hover{
+    color:#ff4b73;
+    transform:translateX(8px);
+}
+
+/* ================= Bottom ================= */
+
+.footer-bottom{
+    border-top:1px solid rgba(255,255,255,.08);
+    padding-top:25px;
+    text-align:center;
+}
+
+.footer-bottom p{
+    color:#8e93b3;
+    font-size:15px;
+}
+
+/* ================= Responsive ================= */
+
+@media(max-width:992px){
+
+    .footer-container{
+        flex-direction:column;
+        gap:50px;
+    }
+
+    .footer-links{
+        justify-content:flex-start;
+    }
+
+}
+
+@media(max-width:768px){
+
+    .footer{
+        padding:70px 30px 25px;
+    }
+
+    .footer-links{
+        flex-direction:column;
+        gap:35px;
+    }
+
+    .footer-logo h2{
+        font-size:26px;
+    }
+
+}
+
+@media(max-width:576px){
+
+    .footer{
+        padding:60px 20px 20px;
+    }
+
+    .footer-logo img{
+        width:60px;
+    }
+
+    .footer-logo h2{
+        font-size:22px;
+    }
+
+    .footer-logo p{
+        font-size:15px;
+    }
+
+    .footer-column h3{
+        font-size:19px;
+    }
+
+}
+
+@media(max-width:400px){
+
+    .footer-bottom p{
+        font-size:13px;
+    }
+
+}

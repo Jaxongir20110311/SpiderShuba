@@ -1,0 +1,173 @@
+.partners{
+    width:100%;
+    min-height:100vh;
+    padding:120px 8%;
+    background:#171a40;
+    overflow:hidden;
+}
+
+.partners-header{
+    text-align:center;
+    margin-bottom:70px;
+}
+
+.section-tag{
+    display:inline-block;
+    color:#ff4b73;
+    font-size:15px;
+    font-weight:600;
+    letter-spacing:2px;
+    margin-bottom:15px;
+}
+
+.partners-header h2{
+    color:#fff;
+    font-size:52px;
+    margin-bottom:20px;
+}
+
+.partners-header p{
+    color:#c6c8df;
+    max-width:700px;
+    margin:auto;
+    line-height:1.8;
+}
+
+/* ======================== */
+
+.partners-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:30px;
+}
+
+/* ======================== */
+
+.partner-card{
+    background:rgba(255,255,255,.05);
+    border:1px solid rgba(255,255,255,.08);
+    backdrop-filter:blur(15px);
+    border-radius:20px;
+    padding:35px 25px;
+    text-align:center;
+    transition:.4s;
+    cursor:pointer;
+    animation:fadeUp .8s ease;
+}
+
+.partner-card:hover{
+    transform:translateY(-10px);
+    border-color:#ff4b73;
+    box-shadow:0 20px 40px rgba(0,0,0,.35);
+}
+
+.partner-card img{
+    width:80px;
+    height:80px;
+    object-fit:contain;
+    margin-bottom:20px;
+    transition:.4s;
+}
+
+.partner-card:hover img{
+    transform:scale(1.1) rotate(5deg);
+}
+
+.partner-card h3{
+    color:#fff;
+    font-size:22px;
+    margin-bottom:10px;
+}
+
+.partner-card p{
+    color:#c4c7df;
+    font-size:15px;
+    line-height:1.7;
+}
+
+/* ======================== */
+
+@keyframes fadeUp{
+
+    from{
+        opacity:0;
+        transform:translateY(40px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+/* ======================== */
+
+@media(max-width:1200px){
+
+    .partners-grid{
+        grid-template-columns:repeat(3,1fr);
+    }
+
+}
+
+@media(max-width:900px){
+
+    .partners-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+}
+
+@media(max-width:768px){
+
+    .partners{
+        padding:90px 30px;
+    }
+
+    .partners-header h2{
+        font-size:38px;
+    }
+
+}
+
+@media(max-width:600px){
+
+    .partners-grid{
+        grid-template-columns:1fr;
+    }
+
+    .partners{
+        padding:80px 20px;
+    }
+
+    .partners-header h2{
+        font-size:30px;
+    }
+
+    .partners-header p{
+        font-size:16px;
+    }
+
+    .partner-card img{
+        width:70px;
+        height:70px;
+    }
+
+    .partner-card h3{
+        font-size:20px;
+    }
+
+}
+
+@media(max-width:400px){
+
+    .partners-header h2{
+        font-size:26px;
+    }
+
+    .partner-card{
+        padding:25px 20px;
+    }
+
+}
