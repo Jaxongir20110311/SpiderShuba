@@ -1,0 +1,220 @@
+.community{
+    width:100%;
+    min-height:100vh;
+    padding:120px 8%;
+    background:#15173b;
+    position:relative;
+    overflow:hidden;
+}
+
+/* ================= Header ================= */
+
+.community-header{
+    text-align:center;
+    margin-bottom:70px;
+}
+
+.section-tag{
+    display:inline-block;
+    color:#ff4b73;
+    font-size:15px;
+    font-weight:600;
+    letter-spacing:2px;
+    margin-bottom:15px;
+}
+
+.community-header h2{
+    color:#fff;
+    font-size:52px;
+    margin-bottom:20px;
+}
+
+.community-header p{
+    color:#c6c6d8;
+    max-width:750px;
+    margin:auto;
+    line-height:1.8;
+    font-size:18px;
+}
+
+/* ================= Cards ================= */
+
+.community-container{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:30px;
+    margin-bottom:70px;
+}
+
+.social-card{
+    background:rgba(255,255,255,.05);
+    backdrop-filter:blur(15px);
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:20px;
+    padding:35px 25px;
+    text-align:center;
+    transition:.4s;
+    animation:fadeUp 1s ease;
+}
+
+.social-card:hover{
+    transform:translateY(-12px);
+    border-color:#ff4b73;
+    box-shadow:0 20px 40px rgba(0,0,0,.35);
+}
+
+.social-card img{
+    width:75px;
+    height:75px;
+    object-fit:contain;
+    margin-bottom:20px;
+    transition:.4s;
+}
+
+.social-card:hover img{
+    transform:scale(1.1) rotate(5deg);
+}
+
+.social-card h3{
+    color:#fff;
+    margin-bottom:10px;
+    font-size:24px;
+}
+
+.social-card p{
+    color:#c3c6dd;
+    line-height:1.7;
+    margin-bottom:25px;
+    font-size:15px;
+}
+
+/* ================= Button ================= */
+
+.social-card button{
+    padding:13px 32px;
+    border:none;
+    border-radius:40px;
+    background:#ff4b73;
+    color:#fff;
+    cursor:pointer;
+    font-size:15px;
+    font-weight:600;
+    transition:.35s;
+}
+
+.social-card button:hover{
+    background:#ff2f5c;
+    transform:scale(1.05);
+}
+
+/* ================= Bottom Image ================= */
+
+.community-image{
+    display:flex;
+    justify-content:center;
+}
+
+.community-image img{
+    width:100%;
+    max-width:450px;
+    animation:float 4s ease-in-out infinite;
+}
+
+/* ================= Animations ================= */
+
+@keyframes fadeUp{
+
+    from{
+        opacity:0;
+        transform:translateY(50px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+@keyframes float{
+
+    0%{
+        transform:translateY(0);
+    }
+
+    50%{
+        transform:translateY(-18px);
+    }
+
+    100%{
+        transform:translateY(0);
+    }
+
+}
+
+/* ================= Responsive ================= */
+
+@media(max-width:1200px){
+
+    .community-container{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+}
+
+@media(max-width:768px){
+
+    .community{
+        padding:90px 30px;
+    }
+
+    .community-header h2{
+        font-size:38px;
+    }
+
+    .community-container{
+        grid-template-columns:1fr;
+    }
+
+}
+
+@media(max-width:576px){
+
+    .community-header h2{
+        font-size:30px;
+    }
+
+    .community-header p{
+        font-size:16px;
+    }
+
+    .social-card{
+        padding:30px 20px;
+    }
+
+    .social-card img{
+        width:65px;
+        height:65px;
+    }
+
+    .social-card h3{
+        font-size:22px;
+    }
+
+}
+
+@media(max-width:400px){
+
+    .community{
+        padding:80px 20px;
+    }
+
+    .community-header h2{
+        font-size:26px;
+    }
+
+    .social-card button{
+        width:100%;
+    }
+
+} 
