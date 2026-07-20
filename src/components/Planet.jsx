@@ -7,7 +7,7 @@ export default function Planet() {
       <div className="planet-bg"></div>
 
       <div className="container">
-
+ 
         <div className="planet-header">
 
           <span className="planet-subtitle">
