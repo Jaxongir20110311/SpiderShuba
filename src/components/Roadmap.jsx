@@ -21,7 +21,7 @@ function Roadmap() {
             Website launch, social media creation, token deployment and
             community building.
           </p>
-        </div>
+        </div>    
 
         <div className="roadmap-card right">
           <span className="number">02</span>
